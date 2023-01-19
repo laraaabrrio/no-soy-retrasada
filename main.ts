@@ -1,3 +1,14 @@
+input.onButtonPressed(Button.A, function () {
+    NUMERO += 1
+    basic.showNumber(NUMERO)
+})
+input.onButtonPressed(Button.B, function () {
+    NUMERO += -1
+    basic.showNumber(NUMERO)
+})
+let NUMERO = 0
+NUMERO = 0
+basic.showNumber(NUMERO)
 basic.forever(function () {
     if (input.compassHeading() > 315 || input.compassHeading() < 45) {
         basic.showArrow(ArrowNames.North)
